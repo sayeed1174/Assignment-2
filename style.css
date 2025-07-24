@@ -1,6 +1,7 @@
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -67,4 +68,39 @@ margin-right: 150px;
   margin-left: 150px;
   margin-right: 150px;
   
+}
+/* CARD SECTION */
+.card-heading, .card-des{
+    display: flex;
+    justify-content: center;
+}
+
+.card-heading{
+    font-size: 3.125rem;
+}
+.card{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+.card-section{
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.flower{
+    width: 270px;
+    height: 484px;
+    gap: 30px;
+}
+.btn-primary{
+    height: 50px;
+    width: 270px;
+    color: white;
+    background-color: #E95A08;
+    border: none;
+}
+.flw-name{
+    display: flex;
+    justify-content: center;
 }
