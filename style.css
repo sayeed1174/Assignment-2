@@ -104,3 +104,19 @@ margin-right: 150px;
     display: flex;
     justify-content: center;
 }
+/* flower and plant lover */
+.feature{
+    gap: 60px;
+    margin-top: 210px;
+     margin-left: 150px;
+    margin-right: 150px;
+
+}
+.shop-pic img{
+    height: 597px;
+    width: 540px;
+}
+.heading-sec{
+    width: 540px;
+    height: 521px;
+}
