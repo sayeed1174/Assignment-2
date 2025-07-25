@@ -136,6 +136,30 @@ margin-right: 150px;
 .gap{
     gap: 20px;
 }
+/* batch */
+.trusted-container{
+     position: relative;
+    display: inline-block;
+}
+.shop-pic {
+    height: 597px;
+    width: 540px;
+    display: block;
+}
+.badge {
+    position: absolute;
+    top: -23%; /* adjust as needed */
+    left: 95%;
+    transform: translateX(-50%);
+    max-width:286px; /* adjust width to match your design */
+    height: 286px;
+    width: 286px;
+    z-index: 2;
+     border: none;
+     border-radius: 100%;
+    
+}
+
 /* Latest deals */
  .grid.size {
         display: grid;
@@ -339,7 +363,7 @@ margin-right: 150px;
   }
 
   .nav-item {
-    display: none; /* Hide other items for mobile */
+    display: none; 
   }
 
   .logo {
@@ -365,6 +389,9 @@ margin-right: 150px;
 
   .flower {
     width: 100%;
+  }
+  .badge{
+    display: none;
   }
 
   .feature {
