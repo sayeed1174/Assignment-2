@@ -119,7 +119,10 @@ margin-right: 150px;
     margin-top: 210px;
      margin-left: 150px;
     margin-right: 150px;
-
+}
+.plant{
+    height: 521px;
+    width: 540px;
 }
 .shop-pic img{
     height: 597px;
@@ -200,7 +203,9 @@ margin-right: 150px;
   height: 533px;
   width: 1440px;
   max-width: 100%;
-  margin: 0 auto;
+ margin-top: 120px;
+ margin-left: 0%;
+ margin-right: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,5 +260,150 @@ margin-right: 150px;
   background-color: darkorange;
 }
 
+/* footer section */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+}
+
+/* === Fix starts here === */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.footer-left .logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-left .description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+/* === Fix ends here === */
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-links .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 150px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .nav-item {
+    display: none; /* Hide other items for mobile */
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .banner-heading {
+    font-size: 2.5rem;
+  }
+
+  .banner-des {
+    font-size: 1rem;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flower {
+    width: 100%;
+  }
+
+  .feature {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .heading-sec, .shop-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid.size {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .join-section {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-icons {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
 
 
