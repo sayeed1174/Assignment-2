@@ -6,6 +6,13 @@
   font-variation-settings:
     "wdth" 100;
 }
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 
 /* background color */
@@ -71,10 +78,12 @@ margin-right: 150px;
 .card-heading, .card-des{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 .center{
     justify-content: center;
 }
+
 .card-heading{
     font-size: 3.125rem;
 }
@@ -125,60 +134,126 @@ margin-right: 150px;
     gap: 20px;
 }
 /* Latest deals */
+ .grid.size {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
 
-.square{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-}
-.image-container{
-    position: relative;
-    display: inline-block;
-    
-}
-.image-container img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(60%);
-}
- .text{
-    font-size: 20px;
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-   
-    font-weight: bold;
-    text-align: center;
- }
-.centered-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-.inline{
-    display: inline;
-    padding-bottom: 28px;
-}
-.size{
-    max-height: 100%;
-    height: 423px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.p3 img{
-   
-    width: 753px;
-    height: 423px;
-    gap: 10px;
-}
+      .square.inline {
+        display: grid;
+        gap: 20px;
+      }
 
+      
+      .image-container {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px;
+        filter: brightness(60%); 
+      }
+
+      
+      .text {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      
+      .image-container.p3 {
+        min-height: 100%;
+      }
+
+      .centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+      }
+  
 /* JOIN SECTION */
+
+.join-section {
+  background-image: url('assets/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 533px;
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.join-overlay {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.join-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.join-form input[type="email"] {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+}
+
+.join-form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #E95A08;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.join-form button:hover {
+  background-color: darkorange;
+}
+
+
+
