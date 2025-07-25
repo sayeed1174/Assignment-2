@@ -9,15 +9,14 @@
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 700;
   font-style: normal;
 }
 
 
 
-/* background color */
-.bg-color{  
-   color: #1E1E1E}
+
+
 
 /* display-flex */
 .display-flex{
@@ -67,6 +66,7 @@ margin-right: 150px;
     color: #E95A08;
 }
 .banner-des{
+    font-weight: 500;
     font-size: 1.3rem;
      color: rgba(0, 0, 0, 0.5);
 }
@@ -148,10 +148,10 @@ margin-right: 150px;
 }
 .badge {
     position: absolute;
-    top: -23%; /* adjust as needed */
+    top: -23%; 
     left: 95%;
     transform: translateX(-50%);
-    max-width:286px; /* adjust width to match your design */
+    max-width:286px; 
     height: 286px;
     width: 286px;
     z-index: 2;
@@ -169,9 +169,12 @@ margin-right: 150px;
         margin: 0 auto;
       }
 
+
       .square.inline {
         display: grid;
         gap: 20px;
+         /* width: 367px;
+    height: 423px; */
       }
 
       
@@ -193,17 +196,20 @@ margin-right: 150px;
       
       .text {
         position: absolute;
-        bottom: 15px;
-        left: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: white;
         font-weight: bold;
         font-size: 1rem;
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        text-align: center;
+        
       }
 
       
       .image-container.p3 {
         min-height: 100%;
+       
       }
 
       .centered-text {
@@ -213,9 +219,9 @@ margin-right: 150px;
         transform: translate(-50%, -50%);
         color: white;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
-        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+       
       }
   
 /* JOIN SECTION */
